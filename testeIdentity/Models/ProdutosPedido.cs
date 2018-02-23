@@ -15,13 +15,13 @@ namespace testeIdentity.Models
 
         //chaves estrangeira
         public int PedidoId { get; set; }
-        public int ProdutosCardapioId { get; set; }
+        public int ProdutosId { get; set; }
 
         //propriedades de navegacao
-        [ForeignKey("ProdutosCardapioId ")]
-        public ProdutosCardapio ProdutosCardapio { get; set; }
+        [ForeignKey("ProdutosId")]
+        public Produto Produto { get; set; }
 
-        [ForeignKey("PedidoId ")]
+        [ForeignKey("PedidoId")]
         public Pedido Pedido { get; set; }
     }
 }

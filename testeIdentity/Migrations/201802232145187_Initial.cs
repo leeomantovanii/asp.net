@@ -3,7 +3,7 @@ namespace testeIdentity.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class initial : DbMigration
+    public partial class Initial : DbMigration
     {
         public override void Up()
         {
@@ -64,13 +64,13 @@ namespace testeIdentity.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         PedidoId = c.Int(nullable: false),
-                        ProdutosCardapioId = c.Int(nullable: false),
+                        ProdutosId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Pedidoes", t => t.PedidoId, cascadeDelete: true)
-                .ForeignKey("dbo.ProdutosCardapio", t => t.ProdutosCardapioId, cascadeDelete: true)
+                .ForeignKey("dbo.Produto", t => t.ProdutosId, cascadeDelete: true)
                 .Index(t => t.PedidoId)
-                .Index(t => t.ProdutosCardapioId);
+                .Index(t => t.ProdutosId);
             
             CreateTable(
                 "dbo.Pedidoes",
@@ -160,7 +160,7 @@ namespace testeIdentity.Migrations
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
-            DropForeignKey("dbo.ProdutosPedido", "ProdutosCardapioId", "dbo.ProdutosCardapio");
+            DropForeignKey("dbo.ProdutosPedido", "ProdutosId", "dbo.Produto");
             DropForeignKey("dbo.ProdutosPedido", "PedidoId", "dbo.Pedidoes");
             DropForeignKey("dbo.ProdutosCardapio", "ProdutoId", "dbo.Produto");
             DropForeignKey("dbo.Produto", "IdFornecedor", "dbo.Fornecedor");
@@ -172,7 +172,7 @@ namespace testeIdentity.Migrations
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
             DropIndex("dbo.Pedidoes", new[] { "ApplicationUser_Id" });
-            DropIndex("dbo.ProdutosPedido", new[] { "ProdutosCardapioId" });
+            DropIndex("dbo.ProdutosPedido", new[] { "ProdutosId" });
             DropIndex("dbo.ProdutosPedido", new[] { "PedidoId" });
             DropIndex("dbo.Produto", new[] { "IdFornecedor" });
             DropIndex("dbo.ProdutosCardapio", new[] { "ProdutoId" });

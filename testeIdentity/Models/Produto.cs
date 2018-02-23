@@ -22,6 +22,13 @@ namespace testeIdentity.Models
 
 
         public virtual ICollection<ProdutosCardapio> ProdutosCardapio { get; set; }
+        public virtual ICollection<ProdutosPedido> ProdutosPedido { get; set; }
+
+        public Produto()
+        {
+            this.ProdutosCardapio = new List<ProdutosCardapio>();
+            this.ProdutosPedido = new List<ProdutosPedido>();
+        }
 
     }
 }

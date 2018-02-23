@@ -194,6 +194,7 @@
     <Compile Include="Controllers\FornecedorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PedidoesController.cs" />
     <Compile Include="Controllers\ProdutoesController.cs" />
     <Compile Include="Controllers\ProdutosCardapiosController.cs" />
     <Compile Include="Controllers\ProdutosPedidoesController.cs" />
@@ -201,9 +202,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201802231939320_initial.cs" />
-    <Compile Include="Migrations\201802231939320_initial.Designer.cs">
-      <DependentUpon>201802231939320_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201802232145187_Initial.cs" />
+    <Compile Include="Migrations\201802232145187_Initial.Designer.cs">
+      <DependentUpon>201802232145187_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -284,11 +285,6 @@
     <Content Include="Views\Fornecedors\Details.cshtml" />
     <Content Include="Views\Fornecedors\Edit.cshtml" />
     <Content Include="Views\Fornecedors\Index.cshtml" />
-    <Content Include="Views\Produtoes\Create.cshtml" />
-    <Content Include="Views\Produtoes\Delete.cshtml" />
-    <Content Include="Views\Produtoes\Details.cshtml" />
-    <Content Include="Views\Produtoes\Edit.cshtml" />
-    <Content Include="Views\Produtoes\Index.cshtml" />
     <Content Include="Views\Cardapios\Create.cshtml" />
     <Content Include="Views\Cardapios\Delete.cshtml" />
     <Content Include="Views\Cardapios\Details.cshtml" />
@@ -299,6 +295,16 @@
     <Content Include="Views\ProdutosCardapios\Details.cshtml" />
     <Content Include="Views\ProdutosCardapios\Edit.cshtml" />
     <Content Include="Views\ProdutosCardapios\Index.cshtml" />
+    <Content Include="Views\Pedidoes\Create.cshtml" />
+    <Content Include="Views\Pedidoes\Delete.cshtml" />
+    <Content Include="Views\Pedidoes\Details.cshtml" />
+    <Content Include="Views\Pedidoes\Edit.cshtml" />
+    <Content Include="Views\Pedidoes\Index.cshtml" />
+    <Content Include="Views\Produtoes\Create.cshtml" />
+    <Content Include="Views\Produtoes\Delete.cshtml" />
+    <Content Include="Views\Produtoes\Details.cshtml" />
+    <Content Include="Views\Produtoes\Edit.cshtml" />
+    <Content Include="Views\Produtoes\Index.cshtml" />
     <Content Include="Views\ProdutosPedidoes\Create.cshtml" />
     <Content Include="Views\ProdutosPedidoes\Delete.cshtml" />
     <Content Include="Views\ProdutosPedidoes\Details.cshtml" />
@@ -322,8 +328,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201802231939320_initial.resx">
-      <DependentUpon>201802231939320_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201802232145187_Initial.resx">
+      <DependentUpon>201802232145187_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

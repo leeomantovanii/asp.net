@@ -69,5 +69,5 @@ C:\Users\leonardo\source\repos\testeIdentity\testeIdentity\obj\Debug\testeIdenti
 C:\Users\leonardo\source\repos\testeIdentity\testeIdentity\obj\Debug\testeIdentity.dll
 C:\Users\leonardo\source\repos\testeIdentity\testeIdentity\obj\Debug\testeIdentity.pdb
 C:\Users\leonardo\source\repos\testeIdentity\testeIdentity\obj\Debug\testeIdentity.csprojResolveAssemblyReference.cache
-C:\Users\leonardo\source\repos\testeIdentity\testeIdentity\obj\Debug\testeIdentity.Migrations.initial.resources
+C:\Users\leonardo\source\repos\testeIdentity\testeIdentity\obj\Debug\testeIdentity.Migrations.Initial.resources
 C:\Users\leonardo\source\repos\testeIdentity\testeIdentity\obj\Debug\testeIdentity.csproj.GenerateResource.Cache
